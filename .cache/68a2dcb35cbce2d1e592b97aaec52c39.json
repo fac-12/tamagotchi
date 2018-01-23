@@ -1,0 +1,1 @@
+{"dependencies":[{"name":"./index.js","dynamic":true}],"generated":{"html":"<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"utf-8\">\n    <title></title>\n  </head>\n  <body>\n    <div id=\"root\"></div>\n    <script src=\"/dist/tamagotchi.js\"></script>\n  </body>\n</html>\n"},"hash":"26b95a89ab9c8cae5747f9996061b2c5"}

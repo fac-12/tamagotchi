@@ -69,7 +69,7 @@ require = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({9:[function(require,module,exports) {
+})({12:[function(require,module,exports) {
 /*
 object-assign
 (c) Sindre Sorhus
@@ -161,7 +161,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 	return to;
 };
 
-},{}],12:[function(require,module,exports) {
+},{}],16:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -179,7 +179,7 @@ if ("development" !== 'production') {
 }
 
 module.exports = emptyObject;
-},{}],13:[function(require,module,exports) {
+},{}],15:[function(require,module,exports) {
 "use strict";
 
 /**
@@ -216,7 +216,7 @@ emptyFunction.thatReturnsArgument = function (arg) {
 };
 
 module.exports = emptyFunction;
-},{}],7:[function(require,module,exports) {
+},{}],8:[function(require,module,exports) {
 /** @license React v16.2.0
  * react.production.min.js
  *
@@ -239,7 +239,7 @@ var U={Children:{map:function(a,b,e){if(null==a)return a;var c=[];T(a,c,null,b,e
 d=a.key,g=a.ref,k=a._owner;if(null!=b){void 0!==b.ref&&(g=b.ref,k=G.current);void 0!==b.key&&(d=""+b.key);if(a.type&&a.type.defaultProps)var f=a.type.defaultProps;for(h in b)H.call(b,h)&&!I.hasOwnProperty(h)&&(c[h]=void 0===b[h]&&void 0!==f?f[h]:b[h])}var h=arguments.length-2;if(1===h)c.children=e;else if(1<h){f=Array(h);for(var l=0;l<h;l++)f[l]=arguments[l+2];c.children=f}return{$$typeof:r,type:a.type,key:d,ref:g,props:c,_owner:k}},createFactory:function(a){var b=J.bind(null,a);b.type=a;return b},
 isValidElement:K,version:"16.2.0",__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED:{ReactCurrentOwner:G,assign:m}},V=Object.freeze({default:U}),W=V&&U||V;module.exports=W["default"]?W["default"]:W;
 
-},{"object-assign":9,"fbjs/lib/emptyObject":12,"fbjs/lib/emptyFunction":13}],14:[function(require,module,exports) {
+},{"object-assign":12,"fbjs/lib/emptyObject":16,"fbjs/lib/emptyFunction":15}],17:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -293,7 +293,7 @@ function invariant(condition, format, a, b, c, d, e, f) {
 }
 
 module.exports = invariant;
-},{}],11:[function(require,module,exports) {
+},{}],18:[function(require,module,exports) {
 /**
  * Copyright (c) 2014-present, Facebook, Inc.
  *
@@ -356,7 +356,7 @@ if ("development" !== 'production') {
 }
 
 module.exports = warning;
-},{"./emptyFunction":13}],15:[function(require,module,exports) {
+},{"./emptyFunction":15}],14:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -370,7 +370,7 @@ var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
 
 module.exports = ReactPropTypesSecret;
 
-},{}],10:[function(require,module,exports) {
+},{}],13:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -430,7 +430,7 @@ function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
 }
 
 module.exports = checkPropTypes;
-},{"fbjs/lib/invariant":14,"fbjs/lib/warning":11,"./lib/ReactPropTypesSecret":15}],8:[function(require,module,exports) {
+},{"fbjs/lib/invariant":17,"fbjs/lib/warning":18,"./lib/ReactPropTypesSecret":14}],9:[function(require,module,exports) {
 /** @license React v16.2.0
  * react.development.js
  *
@@ -1782,7 +1782,7 @@ if ("development" !== "production") {
     module.exports = react;
   })();
 }
-},{"object-assign":9,"fbjs/lib/emptyObject":12,"fbjs/lib/invariant":14,"fbjs/lib/warning":11,"fbjs/lib/emptyFunction":13,"prop-types/checkPropTypes":10}],6:[function(require,module,exports) {
+},{"object-assign":12,"fbjs/lib/emptyObject":16,"fbjs/lib/invariant":17,"fbjs/lib/warning":18,"fbjs/lib/emptyFunction":15,"prop-types/checkPropTypes":13}],6:[function(require,module,exports) {
 'use strict';
 
 if ("development" === 'production') {
@@ -1790,7 +1790,7 @@ if ("development" === 'production') {
 } else {
   module.exports = require('./cjs/react.development.js');
 }
-},{"./cjs/react.production.min.js":7,"./cjs/react.development.js":8}],18:[function(require,module,exports) {
+},{"./cjs/react.production.min.js":8,"./cjs/react.development.js":9}],19:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -1899,7 +1899,7 @@ var EventListener = {
 };
 
 module.exports = EventListener;
-},{"./emptyFunction":13}],19:[function(require,module,exports) {
+},{"./emptyFunction":15}],24:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2002,7 +2002,7 @@ function shallowEqual(objA, objB) {
 }
 
 module.exports = shallowEqual;
-},{}],25:[function(require,module,exports) {
+},{}],30:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2025,7 +2025,7 @@ function isNode(object) {
 }
 
 module.exports = isNode;
-},{}],24:[function(require,module,exports) {
+},{}],27:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2048,7 +2048,7 @@ function isTextNode(object) {
 }
 
 module.exports = isTextNode;
-},{"./isNode":25}],22:[function(require,module,exports) {
+},{"./isNode":30}],23:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2086,7 +2086,7 @@ function containsNode(outerNode, innerNode) {
 }
 
 module.exports = containsNode;
-},{"./isTextNode":24}],23:[function(require,module,exports) {
+},{"./isTextNode":27}],22:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -2111,7 +2111,7 @@ function focusNode(node) {
 }
 
 module.exports = focusNode;
-},{}],16:[function(require,module,exports) {
+},{}],10:[function(require,module,exports) {
 /** @license React v16.2.0
  * react-dom.production.min.js
  *
@@ -2342,7 +2342,7 @@ var Sg={createPortal:Qg,findDOMNode:function(a){if(null==a)return null;if(1===a.
 E("40");return a._reactRootContainer?(Z.unbatchedUpdates(function(){Pg(null,null,a,!1,function(){a._reactRootContainer=null})}),!0):!1},unstable_createPortal:Qg,unstable_batchedUpdates:tc,unstable_deferredUpdates:Z.deferredUpdates,flushSync:Z.flushSync,__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED:{EventPluginHub:mb,EventPluginRegistry:Va,EventPropagators:Cb,ReactControlledComponent:qc,ReactDOMComponentTree:sb,ReactDOMEventListener:xd}};
 Z.injectIntoDevTools({findFiberByHostInstance:pb,bundleType:0,version:"16.2.0",rendererPackageName:"react-dom"});var Tg=Object.freeze({default:Sg}),Ug=Tg&&Sg||Tg;module.exports=Ug["default"]?Ug["default"]:Ug;
 
-},{"react":6,"fbjs/lib/ExecutionEnvironment":18,"object-assign":9,"fbjs/lib/emptyFunction":13,"fbjs/lib/EventListener":21,"fbjs/lib/getActiveElement":19,"fbjs/lib/shallowEqual":20,"fbjs/lib/containsNode":22,"fbjs/lib/focusNode":23,"fbjs/lib/emptyObject":12}],29:[function(require,module,exports) {
+},{"react":6,"fbjs/lib/ExecutionEnvironment":19,"object-assign":12,"fbjs/lib/emptyFunction":15,"fbjs/lib/EventListener":21,"fbjs/lib/getActiveElement":24,"fbjs/lib/shallowEqual":20,"fbjs/lib/containsNode":23,"fbjs/lib/focusNode":22,"fbjs/lib/emptyObject":16}],29:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2373,7 +2373,7 @@ function hyphenate(string) {
 }
 
 module.exports = hyphenate;
-},{}],27:[function(require,module,exports) {
+},{}],25:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -2478,7 +2478,7 @@ function camelizeStyleName(string) {
 }
 
 module.exports = camelizeStyleName;
-},{"./camelize":28}],17:[function(require,module,exports) {
+},{"./camelize":28}],11:[function(require,module,exports) {
 /** @license React v16.2.0
  * react-dom.development.js
  *
@@ -17836,7 +17836,7 @@ if ("development" !== "production") {
     module.exports = reactDom;
   })();
 }
-},{"react":6,"fbjs/lib/invariant":14,"fbjs/lib/warning":11,"fbjs/lib/ExecutionEnvironment":18,"object-assign":9,"fbjs/lib/emptyFunction":13,"fbjs/lib/EventListener":21,"fbjs/lib/getActiveElement":19,"fbjs/lib/shallowEqual":20,"fbjs/lib/containsNode":22,"fbjs/lib/focusNode":23,"fbjs/lib/emptyObject":12,"prop-types/checkPropTypes":10,"fbjs/lib/hyphenateStyleName":27,"fbjs/lib/camelizeStyleName":26}],5:[function(require,module,exports) {
+},{"react":6,"fbjs/lib/invariant":17,"fbjs/lib/warning":18,"fbjs/lib/ExecutionEnvironment":19,"object-assign":12,"fbjs/lib/emptyFunction":15,"fbjs/lib/EventListener":21,"fbjs/lib/getActiveElement":24,"fbjs/lib/shallowEqual":20,"fbjs/lib/containsNode":23,"fbjs/lib/focusNode":22,"fbjs/lib/emptyObject":16,"prop-types/checkPropTypes":13,"fbjs/lib/hyphenateStyleName":25,"fbjs/lib/camelizeStyleName":26}],7:[function(require,module,exports) {
 'use strict';
 
 function checkDCE() {
@@ -17872,7 +17872,125 @@ if ("development" === 'production') {
 } else {
   module.exports = require('./cjs/react-dom.development.js');
 }
-},{"./cjs/react-dom.production.min.js":16,"./cjs/react-dom.development.js":17}],4:[function(require,module,exports) {
+},{"./cjs/react-dom.production.min.js":10,"./cjs/react-dom.development.js":11}],5:[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var API_BASE = "https://pokeapi.co/api/v2/pokemon";
+
+var getPokemon = exports.getPokemon = function getPokemon() {
+  return fetch(API_BASE + "/6").then(function (res) {
+    if (res.status !== 200) {
+      console.log("No pokemons for you bud!");
+    }
+    return res.json();
+  }).catch(function (err) {
+    throw new Error("Can't get you your pokemon ", err);
+  });
+};
+},{}],4:[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Pokemon = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = require("react");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _data_helpers = require("../../utils/data_helpers");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Pokemon = exports.Pokemon = function (_React$Component) {
+  _inherits(Pokemon, _React$Component);
+
+  function Pokemon() {
+    _classCallCheck(this, Pokemon);
+
+    return _possibleConstructorReturn(this, (Pokemon.__proto__ || Object.getPrototypeOf(Pokemon)).apply(this, arguments));
+  }
+
+  _createClass(Pokemon, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      (0, _data_helpers.getPokemon)().then(function (data) {
+        return console.log(data);
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return _react2.default.createElement(
+        "div",
+        null,
+        _react2.default.createElement(
+          "h1",
+          null,
+          " Hello world! "
+        )
+      );
+    }
+  }]);
+
+  return Pokemon;
+}(_react2.default.Component);
+},{"react":6,"../../utils/data_helpers":5}],3:[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = require("react");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _index = require("./pokemon/index.js");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var App = function (_React$Component) {
+  _inherits(App, _React$Component);
+
+  function App() {
+    _classCallCheck(this, App);
+
+    return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).apply(this, arguments));
+  }
+
+  _createClass(App, [{
+    key: "render",
+    value: function render() {
+      return _react2.default.createElement(_index.Pokemon, null);
+    }
+  }]);
+
+  return App;
+}(_react2.default.Component);
+
+exports.default = App;
+},{"react":6,"./pokemon/index.js":4}],2:[function(require,module,exports) {
 "use strict";
 
 var _react = require("react");
@@ -17881,18 +17999,18 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactDom = require("react-dom");
 
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+var _App = require("./components/App");
+
+var _App2 = _interopRequireDefault(_App);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var App = function App() {
-  return _react2.default.createElement(
-    "h1",
-    null,
-    "Hello world"
-  );
-};
+// const App = () => <h1>Hello world</h1>;
 
-(0, _reactDom.render)(_react2.default.createElement(App, null), document.getElementById("root"));
-},{"react":6,"react-dom":5}],0:[function(require,module,exports) {
+_reactDom2.default.render(_react2.default.createElement(_App2.default, null), document.getElementById("root"));
+},{"react":6,"react-dom":7,"./components/App":3}],0:[function(require,module,exports) {
 var global = (1, eval)('this');
 var OldModule = module.bundle.Module;
 function Module() {
@@ -17910,7 +18028,7 @@ function Module() {
 module.bundle.Module = Module;
 
 if (!module.bundle.parent && typeof WebSocket !== 'undefined') {
-  var ws = new WebSocket('ws://' + window.location.hostname + ':63814/');
+  var ws = new WebSocket('ws://' + window.location.hostname + ':50057/');
   ws.onmessage = function(event) {
     var data = JSON.parse(event.data);
 
@@ -18011,4 +18129,4 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.require, id)
   });
 }
-},{}]},{},[0,4])
+},{}]},{},[0,2])
