@@ -12,10 +12,6 @@ export class Hungry extends React.Component {
     this.setState({ num: this.state.num + 1 });
   };
 
-  amIHungry = () => {
-    this.state.num === 0 ? "I am hungry. Feed me!" : true;
-  };
-
   render() {
     return (
       <div>
