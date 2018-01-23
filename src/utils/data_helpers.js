@@ -1,7 +1,8 @@
-const API_BASE = "https://pokeapi.co/api/v2/pokemon";
+const API_BASE = "https://pokeapi.co/api/v2/pokemon-form";
 
-export const getPokemon = () => {
-  return fetch(`${API_BASE}/6`)
+export const getPokemon = num => {
+  console.log(num);
+  return fetch(`${API_BASE}/${num}`)
     .then(res => {
       if (res.status !== 200) {
         console.log("No pokemons for you bud!");
