@@ -11,26 +11,30 @@ export class Hungry extends React.Component {
     size: egg
   };
 
-  incrementNum = () => {
+  reachTen = () => {
+    this.setState({
+      num: 0,
+      progress: 0,
+      needFood: "I'm hungry again. Feed me again."
+    });
+    this.props.sizeChange(growing);
+  };
+
+  incrementNum = props => {
+    const { size, sizeChange } = props;
     this.state.num === 0 ? this.setState({ needFood: "Thank you" }) : false;
     this.setState({
       num: this.state.num + 1,
       progress: this.state.progress + 10
     });
-    this.state.num >= 10
-      ? this.setState({
-          num: 0,
-          progress: 0,
-          needFood: "I'm hungry again. Feed me again.",
-          size: growing
-        })
-      : false;
+    this.state.num >= 10 ? this.reachTen() : false;
   };
 
   render() {
     const incrementHeight = {
       height: `${this.state.progress}%`
     };
+
     return (
       <div className="food">
         <div>
@@ -42,9 +46,6 @@ export class Hungry extends React.Component {
           <button onClick={this.incrementNum} className="mood-text">
             Food
           </button>
-        </div>
-        <div>
-          <img className="img" src={this.state.size} />
         </div>
       </div>
     );

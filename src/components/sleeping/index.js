@@ -31,7 +31,7 @@ export class Sleeping extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="sleeping_container">
         <p>{this.state.text}</p>
         <button
           onClick={this.wakeUp}
