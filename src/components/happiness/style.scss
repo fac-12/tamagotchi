@@ -1,0 +1,29 @@
+@mixin bar {
+  height: 20rem;
+  width: 5rem;
+  border: 1px solid gray;
+  background-color: white;
+  transform: rotate(180deg);
+}
+
+@mixin progress-bar ($bcolor) {
+  height: 5rem;
+  width: 5rem;
+  background-color: $bcolor;
+}
+
+.sad-bar {
+  @include bar;
+}
+
+.sad-bar-progress {
+  @include progress-bar(yellow);
+}
+
+.food-bar {
+  @include bar;
+}
+
+.food-bar-progress {
+  @include progress-bar(blue);
+}
