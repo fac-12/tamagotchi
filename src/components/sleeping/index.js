@@ -26,13 +26,19 @@ export class Sleeping extends React.Component {
 
   wakeUp = () => {
     this.setState({ text: "I'm awake" });
+    this.setAsleep(randomTimeout);
   };
 
   render() {
     return (
       <div>
         <p>{this.state.text}</p>
-        <button onClick={this.wakeUp}>Wake me </button>
+        <button
+          onClick={this.wakeUp}
+          className={this.state.text === "I'm awake" ? "hide" : "show"}
+        >
+          Wake me{" "}
+        </button>
       </div>
     );
   }
