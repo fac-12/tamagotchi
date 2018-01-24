@@ -1,12 +1,14 @@
 import React from "react";
 import "../happiness/style.scss";
+import egg from "../../../Public/assets/little.png";
+import growing from "../../../Public/assets/growing.png";
 
 export class Hungry extends React.Component {
   state = {
     needFood: "I am hungry. Feed me.",
     num: 0,
     progress: 0,
-    size: "https://www.polyvore.com/cgi/img-thing?.out=jpg&size=l&tid=146912290"
+    size: egg
   };
 
   incrementNum = () => {
@@ -20,8 +22,7 @@ export class Hungry extends React.Component {
           num: 0,
           progress: 0,
           needFood: "I'm hungry again. Feed me again.",
-          size:
-            "https://vignette.wikia.nocookie.net/pokemon/images/e/ef/025Pikachu_Pokemon_Mystery_Dungeon_Red_and_Blue_Rescue_Teams.png/revision/latest?cb=20150105233050"
+          size: growing
         })
       : false;
   };
@@ -43,7 +44,7 @@ export class Hungry extends React.Component {
           </button>
         </div>
         <div>
-          <img src={this.state.size} />
+          <img className="img" src={this.state.size} />
         </div>
       </div>
     );

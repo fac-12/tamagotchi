@@ -2,7 +2,7 @@
   height: 20rem;
   width: 5rem;
   border: 1px solid gray;
-  background-color: white;
+  background-color: transparent;
   transform: rotate(180deg);
 }
 
@@ -62,6 +62,19 @@ body {
   pointer-events: none;
 }
 
+.pokemon {
+  display: flex;
+  justify-content: center;
+}
+
+.name-button {
+  align-self: flex-end;
+}
+
 .able-button {
   pointer-events: auto;
+}
+
+.img {
+  width: 45%;
 }
