@@ -1,4 +1,5 @@
 import React from "react";
+import "./style.scss";
 
 export class Sad extends React.Component {
   state = {
@@ -14,6 +15,9 @@ export class Sad extends React.Component {
   render() {
     return (
       <div>
+        <div className="sad-bar">
+          <div className="sad-bar-progress" />
+        </div>
         <p>{this.state.feelSad}</p>
         <p>{this.state.num}</p>
         <button onClick={this.incrementNum}>Love</button>
