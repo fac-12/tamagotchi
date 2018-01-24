@@ -19,3 +19,11 @@
 .sad-bar-progress {
   @include progress-bar(yellow);
 }
+
+.food-bar {
+  @include bar;
+}
+
+.food-bar-progress {
+  @include progress-bar(blue);
+}
