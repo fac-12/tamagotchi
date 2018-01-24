@@ -1,25 +1,38 @@
-const randomTimeout = Math.floor(Math.random() * 250);
-
+import React from "react";
+const randomTimeout = Math.floor(Math.random() * (10000 - 7000 - 1) + 7000);
 export class Sleeping extends React.Component {
   state = {
     awake: "",
-    text: ""
+    text: "I'm awake"
+  };
+
+  fallAsleep = () => {
+    this.setState({ text: "Night, night zzzzz" });
   };
 
   setAsleep = randomTimeout => {
-    setTimeout(this.setState({ text: "Night, night zzzzz" }, randomTimeout));
+    console.log(randomTimeout);
+    setTimeout(
+      function() {
+        this.setState({ text: "Night, night zzzz" });
+      }.bind(this),
+      randomTimeout
+    );
   };
 
-  // componentDidMount() {
-  //   getPokemon(randomNum).then(data => this.setState({ data }));
-  // }
+  componentDidMount() {
+    this.setAsleep(randomTimeout);
+  }
+
+  wakeUp = () => {
+    this.setState({ text: "I'm awake" });
+  };
 
   render() {
-    console.log(randomTimeout);
     return (
       <div>
         <p>{this.state.text}</p>
-        <button />
+        <button onClick={this.wakeUp}>Wake me </button>
       </div>
     );
   }

@@ -22,5 +22,3 @@ export class Pokemon extends React.Component {
     );
   }
 }
-
-//
