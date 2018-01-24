@@ -32,9 +32,11 @@ export class Sad extends React.Component {
         <div className="sad-bar">
           <div className="sad-bar-progress" style={incrementHeight} />
         </div>
-        <p>{this.state.feelSad}</p>
-        <p>{this.state.num}</p>
-        <button onClick={this.incrementNum}>Love</button>
+        <p className="mood-text">{this.state.feelSad}</p>
+        <p className="mood-text">{this.state.num}</p>
+        <button className="mood-text" onClick={this.incrementNum}>
+          Love
+        </button>
       </div>
     );
   }

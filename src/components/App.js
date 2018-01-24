@@ -9,9 +9,11 @@ export default class App extends React.Component {
     return (
       <div>
         <Pokemon />
-        <Hungry />
-        <Sad />
-        <Sleeping />
+        <div className="container">
+          <Hungry />
+          <Sleeping />
+          <Sad />
+        </div>
       </div>
     );
   }

@@ -17,7 +17,7 @@ export class Pokemon extends React.Component {
 
     return (
       <div>
-        <h1>{name}</h1>
+        <h1 className="pokemon-name">{name}</h1>
       </div>
     );
   }

@@ -11,7 +11,12 @@
   width: 5rem;
   background-color: $bcolor;
 }
-
+body {
+  background-image: url("https://wallpapertag.com/wallpaper/full/c/7/c/122710-landscape-background-1920x1200-for-android-50.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
 .sad-bar {
   @include bar;
 }
@@ -26,4 +31,37 @@
 
 .food-bar-progress {
   @include progress-bar(blue);
+}
+.pokemon-name {
+  text-align: center;
+  text-transform: uppercase;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.food {
+  display: flex;
+}
+.mood-text {
+  width: 5rem;
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.disable-button {
+  pointer-events: none;
+}
+
+.able-button {
+  pointer-events: auto;
 }
