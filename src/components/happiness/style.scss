@@ -44,6 +44,7 @@ body {
 
 .food {
   display: flex;
+  width: 5rem;
 }
 .mood-text {
   width: 5rem;
@@ -76,5 +77,6 @@ body {
 }
 
 .img {
-  width: 45%;
+  width: 200px;
+  margin-left: 20%;
 }

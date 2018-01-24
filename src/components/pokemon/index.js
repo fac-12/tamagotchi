@@ -21,7 +21,7 @@ export class Pokemon extends React.Component {
 
     return (
       <div className="pokemon">
-        <h1 className="pokemon-name">Name: {name}</h1>
+        <h1 className="pokemon-name">Hi, I'm {name}</h1>
         <button className="name-button" onClick={this.pokeApiCall}>
           Change my name!
         </button>
