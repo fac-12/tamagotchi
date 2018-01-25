@@ -1,8 +1,20 @@
+html {
+  font-family: "VT323";
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
 @mixin bar {
   height: 20rem;
   width: 5rem;
   border: 1px solid gray;
-  background-color: white;
+  background-color: transparent;
   transform: rotate(180deg);
 }
 
@@ -12,7 +24,7 @@
   background-color: $bcolor;
 }
 body {
-  background-image: url("https://wallpapertag.com/wallpaper/full/c/7/c/122710-landscape-background-1920x1200-for-android-50.jpg");
+  background-image: url("https://wallpapertag.com/wallpaper/full/7/8/7/289020-download-cloud-background-2560x1600.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -38,12 +50,13 @@ body {
 }
 .container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 
 .food {
   display: flex;
+  width: 5rem;
 }
 .mood-text {
   width: 5rem;
@@ -62,6 +75,33 @@ body {
   pointer-events: none;
 }
 
+.pokemon {
+  display: flex;
+  justify-content: center;
+}
+
+.name-button {
+  align-self: flex-end;
+}
+
 .able-button {
   pointer-events: auto;
+}
+
+.img {
+  width: 200px;
+}
+
+.img_container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 4%;
+  margin-right: 4%;
+  justify-content: center;
+}
+
+.sleeping_container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
